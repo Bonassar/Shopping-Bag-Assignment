@@ -214,7 +214,16 @@ public final class ArrayBag<T> implements BagInterface<T>
    
    public static void Bagger(String[] item){
 	//item size weight squishability breakability
-	   
+	     for (int i =0; i < T.length; i ++)
+        {
+            if(T[i].currentWeight + g.weightVal && T[i].squishability <= T[i].lastSquish )
+            {
+                T[i].add(g);
+                T[i].currentWeight += g.weightVal;
+                T[i].lastSquish = item.squishability 
+            }
+        }
+    }
 		
 		
 	}
